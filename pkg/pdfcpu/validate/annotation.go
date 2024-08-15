@@ -1693,7 +1693,8 @@ func validateAnnotationDictConcrete(xRefTable *model.XRefTable, d types.Dict, di
 		}
 	}
 
-	return errors.Errorf("validateAnnotationDictConcrete: unsupported annotation subtype:%s\n", subtype)
+	// return errors.Errorf("validateAnnotationDictConcrete: unsupported annotation subtype:%s\n", subtype)
+	return nil
 }
 
 func validateAnnotationDictSpecial(xRefTable *model.XRefTable, d types.Dict, dictName string) error {
